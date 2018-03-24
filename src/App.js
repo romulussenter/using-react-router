@@ -15,7 +15,9 @@ class App extends Component {
       <div>
         <Navigation />
         <HomePage />
+        <hr/>
         <LoginPage />
+        <hr/>
         <SignupPage />
       </div>
     );

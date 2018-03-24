@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
 
 class Signup extends Component {
-    render(){
+    render() {
         return (
             <div>
-                Signup Page
+                <form onSubmit={e => e.preventDefault()}>
+                    <h2>Sign Up</h2>
+                    <div>
+                        <input type="email" placeholder="Email..." required/>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Password..." required/>
+                    </div>
+                    <button>Sign Up!</button>
+
+                </form>
             </div>
         )
     }
