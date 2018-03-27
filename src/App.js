@@ -11,7 +11,9 @@ import SignupPage from './pages/Signup';
 import Navigation from './components/Navigation';
 
 class App extends Component {
+  
   render() {
+    const{ match, location, history} =this.props;
     return (
       <div>
         <Navigation />
@@ -22,6 +24,8 @@ class App extends Component {
         <LoginPage />
         <hr/>
         <SignupPage /> */}
+        <button onClick={()=> history.push('/login')}>Go!</button>
+
       </div>
     );
   }
