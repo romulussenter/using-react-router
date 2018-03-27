@@ -10,6 +10,7 @@ const Navigation = props => (
             </li>
             <li className='nav-item'>
                 <a href="#">Signup</a>
+                <Link to='/signup'>Signup</Link>
             </li>
              <li className='nav-item'>
                 <a href="#">Login</a>
